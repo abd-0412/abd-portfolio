@@ -1,0 +1,284 @@
+        /* ----------------------------
+           Experience Section Styles
+        ----------------------------- */
+        .experience {
+            background-color: var(--primary-color);
+            padding: 80px 10px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            border-radius: 15px;
+            margin: 20px;
+        }
+
+        /* Striped Background Animation */
+        .experience.stripes::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 300%;
+          height: 100%;
+          background: repeating-linear-gradient(
+            -45deg,
+            rgba(255, 255, 255, 0.03) 0px,
+            rgba(255, 255, 255, 0.03) 20px,
+            transparent 10px,
+            transparent 40px
+          );
+          animation: stripesMove 25s linear infinite;
+          z-index: 0;
+        }
+
+        @keyframes stripesMove {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-30%);
+          }
+        }
+
+        /* Ensure content stays above */
+        .experience .container {
+          position: relative;
+          z-index: 1;
+        }
+
+        /* ----------------------------
+           Experience Grid & Cards
+        ----------------------------- */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+            position: relative;
+            z-index: 2; /* Keeps cards above animation */
+        }
+
+        .experience-card {
+            background: var(--secondary-color);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            animation: fadeIn 0.6s ease-out forwards;
+            opacity: 0;
+            border: 1px solid rgba(100, 255, 218, 0.1);
+        }
+
+        .experience-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--accent-color), #0a192f);
+        }
+
+        .experience-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -15px rgba(2, 12, 27, 0.8);
+            border-color: rgba(100, 255, 218, 0.3);
+        }
+
+        /* Card Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .experience-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        .experience-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .experience-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        /* ----------------------------
+           Card Content
+        ----------------------------- */
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .role-company {
+            flex: 1;
+        }
+
+        .role-company h3 {
+            color: var(--accent-color);
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .role-company h4 {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .date-badge {
+            background: rgba(100, 255, 218, 0.1);
+            color: var(--accent-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .card-body {
+            flex: 1;
+        }
+
+        .card-body p {
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .responsibilities {
+            margin-top: 20px;
+        }
+
+        .responsibilities li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+            line-height: 1.6;
+        }
+
+        .responsibilities li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+
+        .card-footer {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(100, 255, 218, 0.2);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: rgba(100, 255, 218, 0.1);
+            color: var(--accent-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+
+        .skill-tag:hover {
+            background: rgba(100, 255, 218, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* ----------------------------
+           Responsive Design
+        ----------------------------- */
+        @media (max-width: 1024px) {
+            .experience-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .experience-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .experience-card {
+                padding: 25px;
+            }
+
+            .company-logo {
+                width: 50px;
+                height: 50px;
+                font-size: 1.1rem;
+            }
+
+            .role-company h3 {
+                font-size: 1.3rem;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+                margin-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .experience {
+                padding: 60px 0;
+                margin: 10px;
+            }
+
+            .experience-card {
+                padding: 20px;
+            }
+
+            .card-header {
+                flex-direction: column;
+            }
+
+            .company-logo {
+                margin-bottom: 15px;
+            }
+
+            .role-company h3 {
+                font-size: 1.2rem;
+            }
+
+            .role-company h4 {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }

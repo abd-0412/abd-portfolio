@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abd's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/education.css">
+    <link rel="stylesheet" href="assets/css/experience.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/certifications.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Abd 's Portfolio</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home/Hero Section -->
+    <section id="home" class="home">
+        <div id="particles-js"></div>
+        <div class="home-container">
+            <div class="home-content">
+                <h1 class="home-title">Hi, I'm <span class="highlight">Abdul Ajees M</span></h1>
+                <div class="dynamic-text">
+                    A Passionate <span class="typing-text"></span>
+                </div>
+                <div class="button-group">
+                    <button class="cta-button view-work" onclick="scrollToSection('projects')">View My Work</button>
+                    <a href="/assets/documents/Azee Resume.pdf" class="cta-button resume-btn" target="_blank">Download Resume</a>
+                </div>
+            </div>
+            <div class="home-image">
+                <div class="image-container">
+                    <div class="professional-bg">
+                        <div class="glow-circle glow-1"></div>
+                        <div class="glow-circle glow-2"></div>
+                        <div class="glow-circle glow-3"></div>
+                    </div>
+                    <img src="assets/images/azee pic.jpg" alt="Abdul Ajees">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+     <section id="about" class="about-section">
+
+        <div class="background-animation">
+            <div class="particles" id="particles"></div>
+            <div class="floating-shapes" id="shapes"></div>
+            <div class="pulse-circle" style="width: 300px; height: 300px; top: 10%; left: 5%; animation-delay: 0s;"></div>
+            <div class="pulse-circle" style="width: 200px; height: 200px; bottom: 15%; right: 10%; animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <div class="profile-image">
+                    <div class="img-border-effect"></div>
+                    <img src="assets/images/azee selfie.jpg" alt="Profile Image" class="profile-img">
+                </div>
+                
+                <div class="about-text">
+                    <h3>Full Stack Developer & UI/UX Specialist</h3>
+                    <p>With over <span class="highlight">2+ years of personal learning experience</span> in web development, I specialize in creating innovative, user-centered digital solutions that drive business growth and enhance user experiences.</p>
+                    <p>My expertise spans the full stack of web technologies, with a particular focus on <span class="highlight">responsive design, performance optimization, and cutting-edge JavaScript frameworks</span>.</p>
+                    <p>I believe in writing clean, maintainable code and creating digital experiences that are both beautiful and functional. My approach combines technical expertise with creative problem-solving to deliver solutions that exceed expectations.</p>
+                </div>
+            </div>
+            
+            <div class="content-boxes">
+                <!-- Development Philosophy Box -->
+                <div class="content-box">
+                    <div class="box-header">
+                        <div class="box-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="box-title">Development Philosophy</h3>
+                    </div>
+                    <div class="philosophy-item">Code should be written for humans first, computers second</div>
+                    <div class="philosophy-item">Simplicity is the ultimate sophistication in software design</div>
+                    <div class="philosophy-item">Test-driven development as a design tool, not just a quality measure</div>
+                    <div class="philosophy-item">Continuous learning is non-negotiable in our rapidly evolving field</div>
+                </div>
+                
+                <!-- Interests Box -->
+                <div class="content-box">
+                    <div class="box-header">
+                        <div class="box-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="box-title">Interests</h3>
+                    </div>
+                    <p>Pursuing passions and interests that inspire growth and creativity</p>
+                    <div class="interest-list">
+                        <span class="interest-item">Web Technologies</span>
+                        <span class="interest-item">AI/ML Study</span>
+                        <span class="interest-item">Cloud Computing</span>
+                        <span class="interest-item">Designing</span>
+                        <span class="interest-item">Data Analysis</span>
+                    </div>
+                </div>
+                
+                <!-- Hobbies Box -->
+                <div class="content-box">
+                    <div class="box-header">
+                        <div class="box-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="box-title">Creative Hobbies</h3>
+                    </div>
+                    <p>How I recharge and find inspiration outside of coding:</p>
+                    <div class="hobby-list">
+                        <span class="hobby-item">Photography</span>
+                        <span class="hobby-item">3D Modeling</span>
+                        <span class="hobby-item">Reading Religious Books</span>
+                        <span class="hobby-item">Meditation and Praying</span>
+                        <span class="hobby-item">Drawing</span>
+                        <span class="hobby-item">DIY Craft</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+    <!-- Animated Background -->
+        <div class="bg-animation">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+
+
+    <div class="container">
+        <h2 class="section-title">Academic Powerhouse</h2>
+
+        <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item fade-up">
+            <div class="timeline-content">
+            <div class="timeline-header">
+                <h3>Bachelor of Information Technology</h3>
+                <span class="date">2023 - 2027 (Present)</span>
+            </div>
+            <div class="timeline-body">
+                <div class="institution">
+                <img src="assets/images/krce-mainlogo.jpeg" alt="K. Ramakrishnan College Of Engineering Logo" class="institution-logo">
+                <h4>K. Ramakrishnan College Of Engineering</h4>
+                </div>
+                <ul class="highlights">
+                <li>Currently pursuing IT degree</li>
+                <li>Building strong foundation in CS & Engineering</li>
+                <li>Relevant coursework: UI & UX, Data Structures, Web Development, AI</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item fade-up">
+            <div class="timeline-content">
+            <div class="timeline-header">
+                <h3>Higher Secondary</h3>
+                <span class="date">2021 - 2023</span>
+            </div>
+            <div class="timeline-body">
+                <div class="institution">
+                <img src="assets/images/tn school.png" alt="TN Government Logo" class="institution-logo">
+                <h4>Government Boys Higher Secondary School</h4>
+                </div>
+                <ul class="highlights">
+                <li>Specialized in computer science during schooling</li>
+                <li>Focused on Python programming</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Experience Section-->
+    <section id="experience" class="experience stripes">
+        <div class="container">
+            <h2 class="section-title">Journey Of Experience</h2>
+            
+            <div class="experience-grid">
+                <!-- Experience Card 1 -->
+                <div class="experience-card">
+                    <div class="card-header">
+                        <img src="assets/images/nullclass.png" alt="NullClass EdTech Private Limited Logo" class="company-logo">
+                        <div class="role-company">
+                            <h3>MERN Stack Developer Intern</h3>
+                            <h4>NullClass EdTech Private Limited</h4>
+                            <span class="date-badge">Sep 2025 - Present</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Worked on full-stack development projects delivering scalable
+                            applications and enhancing performance by 30%.
+                        </p>
+                        <ul class="responsibilities">
+                            <li>Designed and developed REST APIs</li>
+                            <li>Optimized database queries</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <div class="skills">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Card 2 -->
+                <div class="experience-card">
+                    <div class="card-header">
+                        <div class="company-logo">CI</div>
+                        <div class="role-company">
+                            <h3>Front-end Intern</h3>
+                            <h4>CodexIntern Technologies</h4>
+                            <span class="date-badge">Sep 2025 - Present</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Assisted in the development of internal tools and contributed to
+                            front-end feature implementation.
+                        </p>
+                        <ul class="responsibilities">
+                            <li>Developed UI components</li>
+                            <li>Integrated RESTful APIs</li>
+                            <li>Collaborated in agile sprints</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <div class="skills">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- skills-section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Talent Arsenal</h2>
+
+            <!-- Technical Skills -->
+            <div class="skills-category">
+                <h3>Technical Skills</h3>
+                <div class="full-width-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h4>CSS3</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <h4>React</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <h4>NodeJS</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>MongoDB</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <h4>ExpressJS</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-cloud"></i></div>
+                        <h4>Cloud Computing</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skills-category">
+                <h3>Tools</h3>
+                <div class="full-width-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
+                        <h4>WordPress</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <h4>Git</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <h4>VS Code</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                        <h4>Figma</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+                        <h4>GitHub</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-pen"></i></div>
+                        <h4>Canva</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skills-category">
+                <h3>Soft Skills</h3>
+                <div class="soft-skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+                        <h4>Critical Thiking</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-users"></i></div>
+                        <h4>Teamwork</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Problem Solving</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-clock"></i></div>
+                        <h4>Time Management</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h4>Creativity</h4>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-handshake"></i></div>
+                        <h4>Collaboration</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Innovation Hub</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-up">
+                    <div class="project-image">
+                        <img src="assets/images/age calculator.png" alt="Age Calculator">
+                        <div class="project-overlay">
+                            <a href="https://abd-0412.github.io/azee-age-calculator/" class="project-link" target="_blank">View Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Age Calculator</h3>
+                        <p>A simple web application that calculates age based on the birth date input.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/posts/abdul-ajees-m_webdevelopment-javascript-frontend-activity-7350515562042601473-NfqL/?utm_source=share&utm_medium=member_android&rcm=ACoAAElggg8BBqV00uBw3ooLcSCb3whuN2Tvt-0" target="_blank"><i class="fas fa-external-link-alt"></i> Project Presentation</a>
+                            <a href="https://github.com/abd-0412/azee-age-calculator" target="_blank"><i class="fab fa-github"></i>Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-up">
+                    <div class="project-image">
+                        <img src="assets/images/restaurant website.png" alt="Restaurant Website">
+                        <div class="project-overlay">
+                            <a href="https://abd-0412.github.io/azee-restaurant/" class="project-link" target="_blank">View Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Restaurant Website</h3>
+                        <p>A responsive restaurant website with login and menu display</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/posts/abdul-ajees-m_frontenddevelopment-webdesign-restaurantwebsite-activity-7349415347336159232-mnTd/?utm_source=share&utm_medium=member_android&rcm=ACoAAElggg8BBqV00uBw3ooLcSCb3whuN2Tvt-0" target="_blank"><i class="fas fa-external-link-alt"></i> Project Presentation</a>
+                            <a href="https://github.com/abd-0412/azee-restaurant" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-up">
+                    <div class="project-image">
+                        <img src="assets/images/simple calculator.png" alt="Simple Calculator">
+                        <div class="project-overlay">
+                            <a href="https://abd-0412.github.io/azee-calculator/" class="project-link" target="_blank">View Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Simple Calculator</h3>
+                        <p>A basic calculator application that performs simple arithmetic operations.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/posts/abdul-ajees-m_frontenddevelopment-javascript-html-activity-7348697223334940672-1oO2/?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAElggg8BBqV00uBw3ooLcSCb3whuN2Tvt-0&utm_campaign=copy_link" target="_blank"><i class="fas fa-external-link-alt"></i>Project Presentation</a>
+                            <a href="https://github.com/abd-0412/azee-calculator" target="_blank"><i class="fab fa-github"></i>Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container" id="cd">
+            <h2 class="section-title">Showcase Of Excellence</h2>
+            <!-- Certifications -->
+            <div class="certifications-subsection">
+                <h3>Knowledge Badges</h3>
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <div class="cert-main">
+                            <div class="cert-left">
+                                <div class="cert-icon"><i class="fa-brands fa-github"></i></div>
+                            </div>
+                            <div class="cert-right">
+                                <h4 class="cert-title">Github Basics</h4>
+                                <p class="cert-issuer">Simplilearn Platform</p>
+                                <p class="cert-date">Issued: September 2025</p>
+                            </div>
+                        </div>
+                        <a href="/assets/documents/Github Basics(simplilearn).pdf" class="view-cert" target="_blank">View Details</a>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-main">
+                            <div class="cert-left">
+                                <div class="cert-icon"><i class="fa-brands fa-microsoft"></i></div>
+                            </div>
+                            <div class="cert-right">
+                                <h4 class="cert-title">Azure Fundamentals</h4>
+                                <p class="cert-issuer">Microsoft</p>
+                                <p class="cert-date">Issued: September 2025</p>
+                            </div>
+                        </div>
+                        <a href="/assets/documents/Azure Fundamentals(Microsoft).pdf" class="view-cert" target="_blank">View Details</a>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-main">
+                            <div class="cert-left">
+                                <div class="cert-icon"><i class="fa-brands fa-html5"></i></div>
+                            </div>
+                            <div class="cert-right">
+                                <h4 class="cert-title">Introduction to HTML</h4>
+                                <p class="cert-issuer">Simplilearn Platform</p>
+                                <p class="cert-date">Issued: August 2025</p>
+                            </div>
+                        </div>
+                        <a href="/assets/documents/html(simplilearn).pdf" class="view-cert" target="_blank">View Details</a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-main">
+                            <div class="cert-left">
+                                <div class="cert-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                            </div>
+                            <div class="cert-right">
+                                <h4 class="cert-title">Introduction to CSS</h4>
+                                <p class="cert-issuer">Simplilearn Platform</p>
+                                <p class="cert-date">Issued: August 2025</p>
+                            </div>
+                        </div>
+                        <a href="/assets/documents/css(simplilearn).pdf" class="view-cert" target="_blank">View Details</a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-main">
+                            <div class="cert-left">
+                                <div class="cert-icon"><i class="fa-brands fa-js"></i></div>
+                            </div>
+                            <div class="cert-right">
+                                <h4 class="cert-title">JavaScript for Beginners</h4>
+                                <p class="cert-issuer">Simplilearn Platform</p>
+                                <p class="cert-date">Issued: August 2025</p>
+                            </div>
+                        </div>
+                        <a href="/assets/documents/Javascript (simplilearn).pdf" class="view-cert" target="_blank">View Details</a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-main">
+                            <div class="cert-left">
+                                <div class="cert-icon">EX</div>
+                            </div>
+                            <div class="cert-right">
+                                <h4 class="cert-title">Introduction to ExpressJS</h4>
+                                <p class="cert-issuer">Simplilearn Platform</p>
+                                <p class="cert-date">In Progress</p>
+                            </div>
+                        </div>
+                        <a href="#" class="view-cert" target="_blank">View Details</a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-main">
+                            <div class="cert-left">
+                                <div class="cert-icon"><i class="fa-brands fa-node-js"></i></div>
+                            </div>
+                            <div class="cert-right">
+                                <h4 class="cert-title">Getting Started with NodeJS</h4>
+                                <p class="cert-issuer">Simplilearn Platform</p>
+                                <p class="cert-date">In Progress</p>
+                            </div>
+                        </div>
+                        <a href="#" class="view-cert" target="_blank">View Details</a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-main">
+                            <div class="cert-left">
+                                <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+                            </div>
+                            <div class="cert-right">
+                                <h4 class="cert-title">Introduction to MangoDB</h4>
+                                <p class="cert-issuer">Simplilearn Platform</p>
+                                <p class="cert-date">In Progress</p>
+                            </div>
+                        </div>
+                        <a href="#" class="view-cert" target="_blank">View Details</a>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-main">
+                            <div class="cert-left">
+                                <div class="cert-icon"><i class="fa-brands fa-react"></i></div>
+                            </div>
+                            <div class="cert-right">
+                                <h4 class="cert-title">ReactJS for Beginners</h4>
+                                <p class="cert-issuer">Simplilearn Platform</p>
+                                <p class="cert-date">In Progress</p>
+                            </div>
+                        </div>
+                        <a href="#" class="view-cert" target="_blank">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="certifications-subsection">
+                <h3>Recognitions & Contributions</h3>
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <div class="cert-main">
+                            <div class="cert-left">
+                                <div class="cert-icon"><i class="fas fa-medal"></i></div>
+                            </div>
+                            <div class="cert-right">
+                                <h4 class="cert-title">Runner up (Team) - Presentation Day</h4>
+                                <p class="cert-issuer">K. Ramakrishnan College of Engineering</p>
+                                <p class="cert-date">Awarded: August 2025</p>
+                            </div>
+                        </div>
+                        <a href="https://www.linkedin.com/posts/abdul-ajees-m_teamwork-achievement-presentationday-activity-7367200937460813824-bDmu?utm_source=share&utm_medium=member_android&rcm=ACoAAElggg8BBqV00uBw3ooLcSCb3whuN2Tvt-0" class="view-cert" target="_blank">View Details</a>
+                    </div>
+                    
+                    <div class="cert-card">
+                        <div class="cert-main">
+                            <div class="cert-left">
+                                <div class="cert-icon"><i class="fas fa-award"></i></div>
+                            </div>
+                            <div class="cert-right">
+                                <h4 class="cert-title">Team Coordinator - Presentation Day & College Projects</h4>
+                                <p class="cert-issuer">K. Ramakrishnan College of Engineering</p>
+                                <p class="cert-date"></p>
+                            </div>
+                        </div>
+                        <a href="https://www.linkedin.com/posts/abdul-ajees-m_teamwork-achievement-presentationday-activity-7367200937460813824-bDmu?utm_source=share&utm_medium=member_android&rcm=ACoAAElggg8BBqV00uBw3ooLcSCb3whuN2Tvt-0" class="view-cert" target="_blank">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-left">
+                    <p>Whether it’s collaboration, questions, or new opportunities, my inbox is always open. Let’s start the conversation.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Gmail</h4>
+                                <a href="mailto:abdajees01@gmail.com">abdajees01@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+918489677139">+91 8489677139</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Muthupet - 614704, Tamil Nadu, India.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/abd-0412/"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/abdul-ajees-m/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/_abdazee_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@azeethoughts/"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-right">
+                    <form id="contactForm" action="https://formsubmit.co/abdajees01@gmail.com" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h2>Abdul Ajees M</h2>
+                    <p>From Imagination to Implementation | Knowledge Seeker</p>
+                    <p>Turning ideas into impactful realities - from the first spark to smooth execution. I focus on creating digital solutions that perform perfectly and inspire long-term value.</p>
+                    
+                    <div class="footer-divider"></div>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:abdajees01@gmail.com">abdajees01@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+918489677139">+91 8489677139</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Muthupet - 614704, Tamil Nadu, India.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Quick Links</h3>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>More</h3>
+                        <a href="#education">Education</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#certifications">Certifications</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Abdul Ajees M. Made with ❤️, Interest & Lots of Tea😊</p>
+                
+                <div class="footer-tech">
+                    <span>Built with HTML, CSS, and JavaScript</span>
+                </div>
+                
+                <a href="#home" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/particles-config.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/scroll-animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

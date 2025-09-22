@@ -1,0 +1,207 @@
+/* Education Section */
+.education {
+  background: var(--secondary-color);
+  border-radius: 15px;
+  margin: 20px;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated Background */
+.bg-animation {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(100, 255, 218, 0.07);
+  animation: float 16s infinite ease-in-out;
+}
+.shape:nth-child(1) {
+  width: 180px; height: 180px;
+  top: 15%; left: 20%;
+  animation-duration: 18s;
+}
+.shape:nth-child(2) {
+  width: 220px; height: 220px;
+  top: 60%; left: 70%;
+  animation-duration: 22s;
+}
+.shape:nth-child(3) {
+  width: 140px; height: 140px;
+  bottom: 10%; left: 30%;
+  animation-duration: 20s;
+}
+.shape:nth-child(4) {
+  width: 100px; height: 100px;
+  top: 40%; left: 10%;
+  animation-duration: 25s;
+}
+.shape:nth-child(5) {
+  width: 160px; height: 160px;
+  bottom: 20%; right: 15%;
+  animation-duration: 19s;
+}
+.shape:nth-child(6) {
+  width: 80px; height: 80px;
+  top: 25%; right: 25%;
+  animation-duration: 26s;
+}
+.shape:nth-child(7) {
+  width: 120px; height: 120px;
+  bottom: 35%; left: 50%;
+  animation-duration: 21s;
+}
+.shape:nth-child(8) {
+  width: 200px; height: 200px;
+  top: 5%; right: 40%;
+  animation-duration: 24s;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-30px) translateX(20px); }
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background: var(--accent-color);
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  max-width: 850px;
+  margin: 0 auto;
+  z-index: 2;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+  width: 4px;
+  background: linear-gradient(var(--accent-color), transparent);
+  border-radius: 2px;
+}
+
+/* Timeline Items */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 25px 40px;
+  box-sizing: border-box;
+}
+.timeline-item:nth-child(odd) { left: 0; }
+.timeline-item:nth-child(even) { left: 50%; }
+
+.timeline-content {
+  background: var(--primary-color);
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+.timeline-content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -20px rgba(2, 12, 27, 0.9);
+}
+
+/* Arrows */
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  width: 18px; height: 18px;
+  background: var(--primary-color);
+  transform: rotate(45deg);
+}
+.timeline-item:nth-child(odd) .timeline-content::after { right: -9px; }
+.timeline-item:nth-child(even) .timeline-content::after { left: -9px; }
+
+/* Header */
+.timeline-header {
+  border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+.timeline-header h3 {
+  color: var(--accent-color);
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+.timeline-header .date {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Institution */
+.institution {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.institution-logo {
+  width: 45px; height: 45px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: bold;
+  color: var(--primary-color);
+  background: var(--accent-color);
+  margin-right: 12px;
+}
+.institution h4 {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+/* Highlights */
+.highlights li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+.highlights li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline::after { left: 25px; }
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+    left: 0 !important;
+    margin-bottom: 40px;
+  }
+  .timeline-content::after {
+    left: -9px !important;
+    right: auto !important;
+  }
+}
