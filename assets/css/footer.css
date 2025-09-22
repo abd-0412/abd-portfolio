@@ -157,7 +157,7 @@
                 gap: 30px;
             }
                 .footer-info p{
-                        font-size: 1rem;
+                        font-size: 0.9rem;
                 }
             
             .footer-bottom {
@@ -166,7 +166,7 @@
                 text-align: center;
             }
                 .footer-bottom p{
-                        font-size: 0.7rem;
+                        font-size: 0.8rem;
                 }
             
             .footer-tech {
@@ -185,4 +185,5 @@
             }
 
         }
+
 
